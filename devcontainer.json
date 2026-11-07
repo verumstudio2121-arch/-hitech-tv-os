@@ -1,0 +1,11 @@
+{
+  "name": "HiTech TV OS (Android)",
+  "image": "mcr.microsoft.com/devcontainers/java:1-17-bookworm",
+  "hostRequirements": { "cpus": 4, "memory": "8gb" },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "containerEnv": {
+    "ANDROID_HOME": "/home/vscode/android-sdk",
+    "ANDROID_SDK_ROOT": "/home/vscode/android-sdk"
+  },
+  "customizations": { "vscode": { "extensions": ["fwcd.kotlin", "redhat.vscode-xml"] } }
+}
